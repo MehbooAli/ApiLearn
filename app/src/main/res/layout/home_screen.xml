@@ -6,11 +6,67 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvTeamA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Home Screen"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Team A Score: "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTeamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Team B Score: "
+        app:layout_constraintBottom_toBottomOf="@+id/tvTeamA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTeamA" />
+
+    <Button
+        android:id="@+id/btnTeamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="17dp"
+        android:text="Team A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnTeamC"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTeamA" />
+
+    <Button
+        android:id="@+id/btnTeamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="Team B"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTeamC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTeamC"
+        app:layout_constraintTop_toTopOf="@+id/btnTeamC" />
+
+    <TextView
+        android:id="@+id/tvTeamC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="Team C"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTeamA"
+        app:layout_constraintStart_toEndOf="@+id/tvTeamA"
+        app:layout_constraintTop_toTopOf="@+id/tvTeamA" />
+
+    <Button
+        android:id="@+id/btnTeamC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team C"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTeamA"
+        app:layout_constraintEnd_toStartOf="@+id/btnTeamB"
+        app:layout_constraintStart_toEndOf="@+id/btnTeamA"
+        app:layout_constraintTop_toTopOf="@+id/btnTeamA" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

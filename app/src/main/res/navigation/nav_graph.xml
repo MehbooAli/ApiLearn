@@ -6,18 +6,26 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.apilearn.HomeFragment"
+        android:name="com.example.apilearn.Fragment.HomeFragment"
         android:label="HomeFragment" />
     <fragment
         android:id="@+id/appointmentFragment"
-        android:name="com.example.apilearn.AppointmentFragment"
-        android:label="AppointmentFragment" />
+        android:name="com.example.apilearn.Fragment.AppointmentFragment"
+        android:label="AppointmentFragment" >
+        <action
+            android:id="@+id/action_appointmentFragment_to_productItemsFragment"
+            app:destination="@id/productItemsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/supportFragment"
-        android:name="com.example.apilearn.SupportFragment"
+        android:name="com.example.apilearn.Fragment.SupportFragment"
         android:label="SupportFragment" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.apilearn.ProfileFragment"
+        android:name="com.example.apilearn.Fragment.ProfileFragment"
         android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/productItemsFragment"
+        android:name="com.example.apilearn.Fragment.ProductItemsFragment"
+        android:label="ProductItemsFragment" />
 </navigation>
